@@ -1,0 +1,80 @@
+body {
+  text-align: center;
+  background-color: plum;
+  color: whitesmoke;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 span {
+  text-decoration: underline;
+}
+
+.help-button {
+  margin-bottom: 20px;
+}
+.game-container {
+  z-index: 1;
+}
+
+/*Styling for popup on help page*/
+.popup-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 25px;
+  border-bottom: 2px solid blueviolet;
+  cursor: pointer;
+  color: plum;
+}
+.popup-header:hover {
+  background-color: blueviolet;
+}
+.help-popup {
+  position: absolute;
+  height: 75%;
+  width: 60%;
+  background-color: lightcyan;
+  top: 20%;
+  right: 20%;
+}
+.popup-content p{
+  color: plum;
+  padding: 10px;
+}
+.overlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: rgba(240, 248, 255, 0.575);
+}
+/* Styling for letter components */
+.word-reveal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.letters-display {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  justify-content: center;
+  align-items: flex-end;
+  height: calc(60vh / 4);
+  margin-bottom: 30px;
+}
+
+.letters-display span {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.letters-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  height: calc(60vh / 4);
+}
+
+
+
